@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PASSWORD SCREEN -->
+  <div id="login">
+    <h2>Password Daal</h2>
+    <input type="password" id="password" placeholder="Password">
+    <br><br>
+    <button onclick="checkPassword()">Enter</button>
+    <p id="error"></p>
+  </div>
+
+  <!-- PROFILE SCREEN -->
+  <div id="profile" style="display:none;">
+    <img src="photo.jpg" alt="My Photo">
+    <h1>Vakil</h1>
+    <p>DevOps Learner | AWS | GitHub</p>
+
+    <h3>My Video</h3>
+    <video controls width="300">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<script>
+  function checkPassword() {
+    let pass = document.getElementById("password").value;
+    if(pass === "vakil1234"){
+      document.getElementById("login").style.display = "none";
+      document.getElementById("profile").style.display = "block";
+    } else {
+      document.getElementById("error").innerText = "Galat Password ❌";
+    }
+  }
+</script>
+
+</body>
+</html>
+<img src="photo.jpg" alt="My photo" width="200">

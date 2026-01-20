@@ -1,0 +1,26 @@
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+#login {
+  margin-top: 150px;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
